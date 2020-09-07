@@ -76,14 +76,11 @@ function populateCityWeather(city, citySearchList) {
                 method: "GET"
                 // Uv Index Information
             }).then(function (uvIndex) {
-                console.log(uvIndex);
-
                 var uvIndexDisplay = $("<button>");
                 uvIndexDisplay.addClass("btn btn-danger");
 
                 $("#currentUv").text("UV Index: ");
                 $("#currentUv").append(uvIndexDisplay.text(uvIndex[0].value));
-                console.log(uvIndex[0].value);
 
                 $.ajax({
                     url: queryURL2,
