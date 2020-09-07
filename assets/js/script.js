@@ -53,8 +53,8 @@ function populateCityWeather(city, citySearchList) {
                 "src",
                 "https://openweathermap.org/img/w/" + weather.weather[0].icon + ".png"
             );
-            $("#current-icon").empty();
-            $("#current-icon").append(weatherIcon);
+            $("#currentWeatherIcon").empty();
+            $("#currentWeatherIcon").append(weatherIcon);
 
             // Display the Weather Information
             $("#currentTemp").text("Temperature: " + weather.main.temp + " °F");
